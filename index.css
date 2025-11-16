@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 750px;
+  font-family: 'Montserrat';
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover,
+.social-items > i:hover {
+  color: blue;
+  cursor: pointer;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+header {
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+header nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+header nav button {
+  padding: 15px;
+  font-size: 16px;
+}
+
+.menu-items {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-size: 20px;
+}
+
+.social-items {
+  display: flex;
+  gap: 30px;
+  font-size: 30px;
+}
+
+.main-container {
+  width: 80%;
+  margin: 50px auto;
+  aspect-ratio: 4/3;
+  background: url('https://res.cloudinary.com/highereducation/images/w_1024,h_683,c_scale/f_auto,q_auto/v1659634209/BestColleges.com/BC_Bootcamps_Resources_How-to-Decide-If-Coding-is-Right-for-Me_3.7.22_FTR_24718e35be/BC_Bootcamps_Resources_How-to-Decide-If-Coding-is-Right-for-Me_3.7.22_FTR-1024x683.jpg');
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: center;
+  padding: 50px;
+  max-width: 750px;
+  text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff;
+}
+@media (max-width: 500px) {
+  body {
+    min-width: 300px;
+  }
+
+  .menu-items {
+    flex-direction: column;
+    gap: 0;
+    align-items: stretch;
+  }
+
+  .main-container {
+    width: 100%;
+    justify-content: space-between;
+    font-size: 1.3rem;
+    padding: 0;
+  }
+
+  .main-content {
+    padding: 1.5rem;
+  }
+
+  .menu-items a {
+    padding: 1.1rem;
+    border: 1px solid black;
+    text-align: center;
+  }
+}
